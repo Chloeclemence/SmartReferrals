@@ -1,0 +1,245 @@
+/* ---------- Fonts ---------- */
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../fonts/Helvetica.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../fonts/Helvetica-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../fonts/Helvetica-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../fonts/Helvetica-Oblique.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* ---------- Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica", Arial, sans-serif;
+    background: #ffffff;
+    color: #003f63;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+button {
+    font: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* ---------- Layout ---------- */
+
+.page {
+    min-height: 100vh;
+}
+
+/* ---------- Header ---------- */
+
+.header {
+    height: 90px;
+    border-bottom: 1px solid #e6e6e6;
+
+    display: grid;
+    grid-template-columns: 240px 1fr 240px;
+    align-items: center;
+
+    padding: 0 60px;
+}
+
+.header-logo {
+    width: 260px;
+}
+
+/* ---------- Navigation ---------- */
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-link {
+    color: #013F5C;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+
+    width: 100%;
+    height: 1px;
+
+    background: #F37425;
+
+    display: none;
+}
+
+.nav-link:hover::after {
+    display: block;
+}
+
+.nav-link.active::after {
+    display: block;
+}
+
+/* Overview should not show active underline */
+
+.nav-overview.active::after {
+    display: none;
+}
+
+.nav-overview.active:hover::after {
+    display: block;
+}
+
+/* ---------- Header Controls ---------- */
+
+.header-controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+}
+
+.page-counter {
+    color: #013F5C;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.navigation-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+/* ---------- Arrow Buttons ---------- */
+
+.arrow-button {
+    width: 48px;
+    height: 48px;
+
+    border: 1px solid #cfd8df;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #013F5C;
+    background: #ffffff;
+    font-size: 20px;
+
+    transition: all 0.2s ease;
+}
+
+.arrow-button:hover:not(:disabled) {
+    background: #013F5C;
+    color: #ffffff;
+}
+
+.arrow-button:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+/* ---------- Content ---------- */
+
+.content {
+    width: 100%;
+}
+
+.page-section {
+    display: none;
+}
+
+.page-section.active-section {
+    display: block;
+}
+
+.section-container {
+    max-width: 2000px;
+    margin: 0 auto;
+    /*padding: 80px 60px;*/
+}
+
+.section-container h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #003f63;
+}
+
+.overview-box {
+    display: flex;
+    gap: 140px;
+    padding: 40px;
+    width: 100%;
+
+}
+
+.overview-box >.left-box {
+    margin-top: 80px;
+    flex: 1;
+    border: 1px solid #000;
+}
+
+.overview-box >.right-box {
+    margin-top: 50px;
+    flex: 1;
+}
+
+.overview-box > .left-box > .blue-heading {
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 76px;
+    color: #1D4F9F;
+}
+
+.overview-box > .left-box > .heading-box {
+    padding-right: 20px;
+    border: 1px solid red;
+}
+
+
+.overview-box > .left-box > .orange-heading {
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 76px;
+    color: #F37425;
+}
