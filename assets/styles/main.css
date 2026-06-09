@@ -904,3 +904,91 @@ button {
 
     color: #013F5C;
 }
+
+.main-features-container {
+    padding: 40px;
+    display: flex;
+    gap: 140px;
+}
+
+.features-left {
+    flex: 3;
+}
+
+.features-left-title {
+    color: #F37425;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700 !important;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.features-left > h1 {
+    font-size: 44px;
+    line-height: 52px;
+    font-weight: 700;
+    color: #1D4F9F;
+    margin-bottom: 30px;
+
+}
+
+.h1-orange {
+    color: #F37425;
+}
+
+.features-left > p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-right: 50px;
+}
+
+.features-left > p > strong {
+    font-weight: 700;
+}
+
+.features-right {
+    flex: 7;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature-card {
+    background: #F3F7FB;
+    border: 1px solid #D7E3F3;
+    border-radius: 15px;
+
+    padding: 24px;
+}
+
+.feature-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding-right: 10px;
+
+    margin-bottom: 20px;
+}
+
+.feature-top h3 {
+    margin: 0;
+
+    color: #013F5C;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.feature-card p {
+    margin: 0;
+
+    color: #013F5C;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.feature-card p strong {
+    font-weight: 700;
+}
