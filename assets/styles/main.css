@@ -909,6 +909,7 @@ button {
     padding: 40px;
     display: flex;
     gap: 140px;
+    padding-bottom: 0;
 }
 
 .features-left {
@@ -991,4 +992,164 @@ button {
 
 .feature-card p strong {
     font-weight: 700;
+}
+
+.features-grey-footer {
+    display: flex;
+    padding: 50px;
+    margin: 50px 40px;
+    background: #F3F7FB;
+    border: 1px solid #D7E3F3;
+    border-radius: 15px;
+}
+
+.features-grey-footer-left {
+    flex: 1;
+    border-right: 1px solid #D7E3F3;
+    display: flex;
+    padding-right: 40px;
+
+}
+
+.features-grey-footer-right {
+    flex: 1;
+    padding-left: 40px;
+    display: flex;
+    gap: 24px;
+}
+
+.features-grey-footer-left-icon {
+    margin-right: 30px;
+}
+
+.features-grey-footer-left-body > p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.features-grey-footer-left-body > p > strong {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.features-grey-footer-right-tile {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.features-grey-footer-right-tile-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.features-grey-footer-right-tile-header {
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.features-grey-footer-right-tile-body {
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.features-blue-footer {
+    background: #013F5C;
+    border-radius: 15px;
+    display: flex;
+    padding: 40px;
+    margin: 0 40px;
+}
+.footer-blue-left {
+    display: flex;
+    gap: 0;
+}
+
+.footer-blue-left-icon {
+    border-right: 1px solid #006C93;
+
+    padding-right: 25px;
+    margin-right: 25px;
+
+    flex: 0 0 auto;
+}
+
+.footer-blue-left-text {
+    flex: 18;
+    display: flex;
+    gap: 110px;
+}
+
+.footer-blue-left-text-body {
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+
+}
+.footer-blue-left-text-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.footer-blue-left-text-body > strong {
+    font-weight: 700;
+    color: #F37425;
+
+
+}
+
+.footer-blue-left-text > .logos {
+    display: flex;
+    gap: 60px;
+    flex: 1;
+    padding-right: 75px;
+
+}
+
+.nhs, .gp-practices, .pcn {
+    flex: 1;
+    color: #fff;
+    text-align: center;
+    align-content: center;
+}
+
+.gp-1, .pcn-1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.gp-2, .pcn-2, .comm-2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.community {
+    flex: 1;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.comm-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
