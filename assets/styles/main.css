@@ -202,13 +202,13 @@ button {
 .section-container h1 {
     font-size: 48px;
     font-weight: 700;
-    color: #003f63;
+
 }
 
 .overview-box {
     display: flex;
     gap: 140px;
-    padding: 40px;
+    padding: 0 40px;
     width: 100%;
 
 }
@@ -216,30 +216,233 @@ button {
 .overview-box >.left-box {
     margin-top: 80px;
     flex: 1;
-    border: 1px solid #000;
+    margin-bottom: 85px;
 }
 
-.overview-box >.right-box {
+.overview-box > .right-box {
     margin-top: 50px;
     flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    margin-bottom: 50px;
 }
 
-.overview-box > .left-box > .blue-heading {
+/* ---------- Shared Card Styles ---------- */
+
+.overview-box > .right-box > .inappropriate-referrals,
+.overview-box > .right-box > .waiting-time,
+.overview-box > .right-box > .savings {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 15px;
+
+    padding: 28px 36px;
+}
+
+.overview-box > .right-box > .inappropriate-referrals,
+.overview-box > .right-box > .waiting-time {
+    background: #F3F7FB;
+    border: 1px solid #D7E3F3;
+}
+
+.overview-box > .right-box > .savings {
+    background: #FFF7ED;
+    border: 1px solid #FCD2B3;
+}
+
+/* ---------- Icon Column ---------- */
+
+.icon-column {
+    width: 140px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-right: 1px solid #D7E3F3;
+
+    padding-right: 28px;
+    margin-right: 28px;
+
+    flex-shrink: 0;
+}
+
+.savings .icon-column {
+    border-right-color: #FCD2B3;
+}
+
+/* ---------- Icon Box ---------- */
+
+.image {
+    width: 90px;
+    height: 90px;
+
+    background: #FFFFFF;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #D7E3F3;
+}
+
+.image svg {
+    width: 48px;
+    height: 48px;
+}
+
+/* ---------- Content ---------- */
+
+.content-column {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stat {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+    color: #F37425;
+}
+
+.title {
+
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+
+    color: #013F5C;
+}
+
+.card-divider {
+    width:41px;
+    height: 1px;
+
+    border: none;
+
+    background: #D7E3F3;
+
+    margin: 4px 0;
+}
+
+.savings .card-divider {
+    background: #FCD2B3;
+}
+
+.savings .image {
+    border-color: #FCD2B3;
+}
+
+.description {
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #013F5C;
+}
+
+.heading-box .blue-heading {
     font-size: 68px;
     font-weight: 700;
     line-height: 76px;
     color: #1D4F9F;
 }
 
-.overview-box > .left-box > .heading-box {
-    padding-right: 20px;
-    border: 1px solid red;
-}
-
-
-.overview-box > .left-box > .orange-heading {
+.heading-box .orange-heading {
     font-size: 68px;
     font-weight: 700;
     line-height: 76px;
     color: #F37425;
+}
+
+.overview-box > .left-box > .heading-box {
+
+    width: calc(100% - 100px);
+}
+
+.overview-hr {
+    margin: 30px 0;
+    width: 60px;
+
+    border: none;
+    height: 1px;
+
+    background-color: #D7E3F3;
+}
+
+.overview-box > .left-box > .overview-p-box {
+    font-size: 22px;
+    width: calc(100% - 70px);
+}
+
+.quote-box {
+    position: relative;
+    overflow: hidden;
+
+    margin: 0 40px 40px;
+
+    background-color: #013F5C;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 40px 50px;
+}
+
+.quote-box::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image: url("../images/dots.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 45%;
+
+    opacity: 0.15;
+
+    pointer-events: none;
+}
+
+.quote-mark,
+.quote-text {
+    position: relative;
+    z-index: 1;
+}
+
+.quote-mark {
+    font-size: 200px;
+    line-height: 0.1;
+
+    color: #006C93;
+    font-weight: 700;
+
+    margin-right: 60px;
+    margin-left: 60px;
+
+    transform: translateY(50px);
+}
+
+.quote-text {
+    color: #FFFFFF;
+
+    font-size: 24px;
+    line-height: 1.5;
+
+    max-width: 1100px;
+}
+
+.highlight {
+    color: #F37425;
+    font-weight: 700;
 }
