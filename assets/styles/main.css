@@ -263,12 +263,17 @@ button {
     padding:
         clamp(28px, 2.5vh, 70px)
         36px;
+
+    transition: border-color 0.5s ease;
+
+
 }
 
 .overview-box > .right-box > .inappropriate-referrals,
 .overview-box > .right-box > .waiting-time {
     background: #F3F7FB;
     border: 1px solid #D7E3F3;
+
 }
 
 .overview-box > .right-box > .savings {
@@ -310,6 +315,7 @@ button {
     align-items: center;
     justify-content: center;
     border: 1px solid #D7E3F3;
+    transition: border-color 0.5s ease;
 }
 
 .image svg {
@@ -488,6 +494,7 @@ button {
         line-height: 24px;
         color: #F37425;
         margin-bottom: 13px;
+        transition: border-color 0.5s ease;
 
     }
 
@@ -543,6 +550,11 @@ button {
         justify-content: center;
 
         margin-right: 15px;
+        transition: border-color 0.5s ease;
+
+        svg path {
+            transition: stroke 0.5s ease;
+        }
     }
 
     .problem-tile-description {
@@ -572,6 +584,7 @@ button {
     flex: 4;
     border: 1px solid #D7E3F3;
     border-radius: 15px;
+    transition: border-color 0.5s ease;
 
 }
 
@@ -701,6 +714,8 @@ button {
     border: 1px solid #D7E3F3;
     background-color: #F3F7FB;
     border-radius: 15px;
+    transition: border-color 0.5s ease;
+
 
 }
 
@@ -971,6 +986,9 @@ button {
     border-radius: 15px;
 
     padding: 24px;
+    transition: border-color 0.5s ease;
+
+
 }
 
 .feature-top {
@@ -1465,6 +1483,7 @@ button {
     color: #fff;
     background: #F37425;
     border-radius: 5px;
+
 }
 
 .calculator-icon, .message-icon {
@@ -1473,7 +1492,7 @@ button {
     justify-content: flex-end;
 }
 
-.request-button, .message-button {
+.request-button, .message-button, .book-button {
     border-radius: 5px;
     border: 1px solid #fff;
     padding: 10px 20px;
@@ -1485,16 +1504,30 @@ button {
     min-height: 48px;
 }
 
-.request-button > span {
+.request-button, .message-button > span {
     color: #fff;
     display: flex;
     align-items: center;
     font-size: 14px;
     line-height: 20px;
+    transition: border-color 0.5s ease;
 }
 
 .request-button svg {
     display: block;
+}
+
+.message-button:hover {
+    background: #013F5C;
+}
+
+.request-button:hover {
+    background: #fff;
+    span {
+
+        color: #F37425 !important;
+    }
+
 }
 
 .contact-footer-1 {

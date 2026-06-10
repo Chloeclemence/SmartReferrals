@@ -1,0 +1,96 @@
+.inappropriate-referrals:hover, .waiting-time:hover {
+    border: 1px solid #1D4F9F !important;
+
+    .image {
+        border: 1px solid #1D4F9F !important;
+    }
+}
+
+.savings:hover {
+    border: 1px solid #F37425 !important;
+
+    .image {
+        border: 1px solid #F37425;
+    }
+}
+
+.problem-tile:hover {
+    .problem-tile-image-box {
+        border: 1px solid #1D4F9F !important;
+
+        svg path {
+            stroke: #F37425 !important;
+        }
+    }
+}
+
+.case-middle:hover {
+    border: 1px solid #1D4F9F;
+}
+
+.case-right:hover {
+    border: 1px solid #1D4F9F;
+}
+
+.feature-card:hover {
+    border: 1px solid #1D4F9F !important;
+
+    .feature-icon > svg path {
+        stroke: #f37425 !important;
+    }
+}
+
+.feature-icon {
+    transition: border-color 0.5s ease;
+}
+
+.features-grey-footer-right-tile-icon svg path {
+    transition: border-color 0.5s ease;
+}
+
+.features-grey-footer-right-tile:hover {
+    .features-grey-footer-right-tile-icon svg path {
+        stroke: #f37425 !important;
+    }
+}
+
+.impact-card {
+    transition: border-color 0.5s ease;
+
+    .impact-top svg path {
+        transition: border-color 0.5s ease;
+    }
+}
+
+.impact-card:hover {
+    border: 1px solid #1D4F9F;
+
+    .impact-top svg path {
+        stroke: #f37425 !important;
+    }
+}
+
+.impact-footer-right-card {
+    transition: border-color 0.5s ease;
+
+    svg path {
+        transition: border-color 0.5s ease;
+    }
+}
+
+.impact-footer-right-card:hover {
+
+    svg path {
+        stroke: #f37425 !important;
+    }
+}
+
+.contact-footer-1-card svg path {
+    transition: border-color 0.5s ease;
+}
+
+.contact-footer-1-card:hover {
+    svg path {
+        stroke: #f37425 !important;
+    }
+}
