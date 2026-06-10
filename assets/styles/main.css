@@ -154,7 +154,7 @@ button {
 
 .navigation-buttons {
     display: flex;
-    gap: 16px;
+    gap: 10px;
 }
 
 /* ---------- Arrow Buttons ---------- */
@@ -163,12 +163,11 @@ button {
     width: 48px;
     height: 48px;
 
-    border: 1px solid #cfd8df;
-    border-radius: 50%;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
 
     color: #013F5C;
     background: #ffffff;
@@ -178,15 +177,25 @@ button {
 }
 
 .arrow-button:hover:not(:disabled) {
-    background: #013F5C;
-    color: #ffffff;
+    cursor: pointer;
 }
 
 .arrow-button:disabled {
-    opacity: 0.35;
-    cursor: not-allowed;
+    cursor: default;
 }
 
+.arrow-button:disabled svg path {
+    stroke: #D7E3F3;
+}
+
+
+.arrow-button svg path {
+    stroke: #013F5C;
+}
+
+.arrow-button:hover svg path {
+    stroke: #013F5C; /* your hover color */
+}
 /* ---------- Content ---------- */
 
 .content {
@@ -1153,3 +1162,174 @@ button {
     margin-top: 10px;
     margin-bottom: 5px;
 }
+
+
+/*Impact Card*/
+.impact-main-section {
+    padding: 40px;
+    display: flex;
+    gap: 25px;
+}
+
+.impact-main-left {
+    flex: 2;
+}
+
+.impact-left-title {
+    color: #F37425;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.impact-left-main {
+    padding-right: 150px;
+    margin-top: 15px;
+
+    h1 {
+        font-size: 44px;
+        line-height: 52px;
+        font-weight: 700;
+    }
+
+    h1 > span {
+        color: #F37425;
+    }
+
+    p {
+        margin-top: 30px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+
+    p > strong {
+        font-weight: 700;
+    }
+
+    img {
+        margin-top: 50px;
+    }
+
+}
+
+
+
+.impact-main-right {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.impact-card {
+    background: #F3F7FB;
+    border: 1px solid #D7E3F3;
+    border-radius: 15px;
+
+    padding: 20px;
+}
+
+.impact-top {
+    display: flex;
+    align-items: flex-start;
+
+
+    margin-bottom: 15px;
+}
+
+.impact-card > h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.impact-card > p {
+    margin: 0;
+
+    color: #013F5C;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.impact-card > p > strong {
+    font-weight: 700;
+}
+
+.impact-footer {
+    margin: 40px;
+    background-color: #F3F7FB;
+    border: 1px solid #D7E3F3;
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+}
+
+.impact-footer-left {
+    flex: 10;
+    border-right: 1px solid #D7E3F3;
+    display: flex;
+    padding-right: 150px;
+
+}
+
+.impact-footer-left-body > h1 {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+
+    span {
+        color: #F37425;
+    }
+}
+.impact-footer-left-body {
+    margin-left: 40px;
+    padding-right: 100px;
+
+}
+
+.impact-footer-left-body > p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+
+    strong {
+        font-weight: 700;
+    }
+}
+
+.impact-footer-right {
+    flex: 9;
+    padding-left: 40px;
+    display: flex;
+    gap: 50px;
+}
+
+.impact-footer-right-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 400;
+        text-align: center;
+
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 700;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+
