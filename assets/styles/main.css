@@ -1718,6 +1718,8 @@ button {
 
         background: #fff;
         z-index: 9999;
+        border: 1px solid red;
+        width: 100vw;
     }
 
     .mobile-footer .page-counter {
@@ -1785,12 +1787,13 @@ button {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        width: 100vw;
         gap: 32px;
 
         background: #fff;
 
         z-index: 9998;
+        border: 1px solid #000;
     }
 
     .mobile-menu.open {
