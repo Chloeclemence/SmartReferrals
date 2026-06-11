@@ -1683,5 +1683,147 @@ button {
     }
 }
 
+.mobile-header {
+    display:none;
+}
 
+.mobile-footer {
+    display: none;
+}
+
+@media (max-width: 1260px) {
+
+    .mobile-header {
+        display: flex;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        height: 140px;
+        z-index: 9999;
+        background-color: #fff;
+    }
+
+    .mobile-footer {
+        display: block;
+
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        height: 90px;
+
+        background: #fff;
+        z-index: 9999;
+    }
+
+    .mobile-footer .page-counter {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .mobile-footer #previous-mobile {
+        position: absolute;
+
+        left: 30px;
+        top: 50%;
+
+        transform: translateY(-50%);
+    }
+
+    .mobile-footer #next-mobile {
+        position: absolute;
+
+        right: 30px;
+        top: 50%;
+
+        transform: translateY(-50%);
+    }
+
+    main,
+    .content,
+    .page-container {
+        padding-top: 140px;
+        padding-bottom: 90px;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .mobile-header-main {
+        display: flex;
+        padding: 80px 40px 40px 40px;
+        width: 100vw;
+    }
+
+    .mobile-header-main-left {
+        display: flex;
+        justify-content: flex-start;
+        flex: 1;
+    }
+
+    .mobile-header-main-right {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1
+    }
+
+    .mobile-menu {
+        position: fixed;
+
+        top: 140px;
+        bottom: 90px;
+        left: 0;
+        right: 0;
+
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 32px;
+
+        background: #fff;
+
+        z-index: 9998;
+    }
+
+    .mobile-menu.open {
+        display: flex;
+    }
+
+    .mobile-nav-link {
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        font-family: inherit;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 1;
+
+        color: #013F5C;
+
+        transition: opacity 0.2s ease;
+    }
+
+    .mobile-nav-link:hover {
+        opacity: 0.7;
+    }
+
+    .mobile-nav-link.active {
+        color: #F37324;
+    }
+
+/*  Overview Page  */
+    .blue-heading, .orange-heading {
+        font-size: 36px !important;
+        line-height: 44px !important;
+    }
+}
 
