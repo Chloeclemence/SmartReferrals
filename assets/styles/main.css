@@ -1805,7 +1805,6 @@ button {
         background: #fff;
 
         z-index: 9998;
-        border: 1px solid #000;
     }
 
     .mobile-menu.open {
@@ -2172,6 +2171,12 @@ button {
     .contact-card-icon {
         margin-left: 0 !important;
     }
+
+    .stat {
+        font-size: 24px !important;
+        line-height: 32px !important;
+    }
+
 
 }
 

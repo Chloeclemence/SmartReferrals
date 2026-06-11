@@ -18,7 +18,6 @@ const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
 
 let currentIndex = 0;
 
-console.log("JS loaded");
 
 function showSection(index) {
 
@@ -53,6 +52,13 @@ function showSection(index) {
     currentIndex = index;
 
     updateArrowStates();
+
+    if (window.innerWidth <= 1260) {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
 }
 
 navLinks.forEach(link => {
