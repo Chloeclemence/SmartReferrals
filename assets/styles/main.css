@@ -76,6 +76,13 @@ button {
 
 .header-logo {
     width: 260px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo svg {
+    display: block;
 }
 
 /* ---------- Navigation ---------- */
@@ -143,7 +150,7 @@ button {
 }
 
 .nav-overview {
-    color: #fff;
+    color: #013F5C;
 }
 
 /* ---------- Header Controls ---------- */
@@ -178,7 +185,7 @@ button {
     justify-content: center;
 
 
-    color: #013F5C;
+    color: #D7E3F3;
     background: #ffffff;
     font-size: 20px;
 
@@ -187,6 +194,7 @@ button {
 
 .arrow-button:hover:not(:disabled) {
     cursor: pointer;
+    color: #013F5C;
 }
 
 .arrow-button:disabled {
@@ -199,7 +207,7 @@ button {
 
 
 .arrow-button svg path {
-    stroke: #013F5C;
+    stroke: #D7E3F3;
 }
 
 .arrow-button:hover svg path {
@@ -482,8 +490,8 @@ button {
 .quote-text {
     color: #FFFFFF;
 
-    font-size: 24px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 26px;
 
     max-width: 1100px;
 }
@@ -513,6 +521,7 @@ button {
         color: #F37425;
         margin-bottom: 13px;
         transition: border-color 0.5s ease;
+        letter-spacing: 0.08px;
 
     }
 
@@ -536,6 +545,7 @@ button {
         font-weight: 400;
         margin-top: 30px;
         margin-bottom: 50px;
+        line-height: 24px;
     }
 
     .case-main-copy > strong {
@@ -577,8 +587,11 @@ button {
 
     .problem-tile-description {
         display: flex;
-        align-items: center; /* vertically centers text block */
+        justify-content: center; /* vertically centers text block */
         min-height: 60px;    /* same height as icon box */
+        flex-direction: column;
+        gap: 5px;
+
     }
 
     .problem-tile-description p {
@@ -587,12 +600,14 @@ button {
         color: #013F5C;
         font-size: 12px;
         line-height: 18px;
+
     }
 
     .problem-tile-description strong {
         font-weight: 700;
         font-size: 16px;
         line-height: 24px;
+        margin-bottom: 200px;
     }
 
 
@@ -621,6 +636,8 @@ button {
 .case-study-body {
     margin: 24px 30px;
     padding-right: 30px;
+    color: #1D4F9F !important;
+    font-weight: 700;
 }
 
 .case-study-body > p {
@@ -745,6 +762,7 @@ button {
     font-size: 22px;
     line-height: 28px;
     font-weight: 700;
+    color: #1D4F9F !important;
 }
 
 .right-underline {
@@ -819,7 +837,7 @@ button {
     display: flex;
     align-items: center;
 
-    padding: 30px;
+    padding: 30px 0;
 }
 .case-study-footer-left {
     flex: 3;
@@ -836,16 +854,17 @@ button {
 
     display: flex;
     align-items: center;
+    margin-right: 0;
+    padding-right: 0;
 }
 
 .footer-divider {
     width: 1px;
-    height: 90px; /* adjust to match design */
+    height: 90px;
 
     background: #D7E3F3;
 
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 0 60px;
 
     flex-shrink: 0;
 }
@@ -877,6 +896,7 @@ button {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
+    flex: 1;
 }
 
 .case-study-footer-left-body > h1 {
@@ -937,6 +957,7 @@ button {
     color: #013F5C;
 
     margin-bottom: 18px;
+    font-style: italic;
 }
 
 .quote-author {
@@ -955,7 +976,7 @@ button {
 }
 
 .features-left {
-    flex: 3;
+    flex: 4;
 }
 
 .features-left-title {
@@ -965,6 +986,7 @@ button {
     font-weight: 700 !important;
     line-height: 24px;
     margin-bottom: 15px;
+    letter-spacing: 0.08px;
 }
 
 .features-left > h1 {
@@ -992,7 +1014,7 @@ button {
 }
 
 .features-right {
-    flex: 7;
+    flex: 6;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -1003,7 +1025,7 @@ button {
     border: 1px solid #D7E3F3;
     border-radius: 15px;
 
-    padding: 24px;
+    padding: 20px 24px;
     transition: border-color 0.5s ease;
 
 
@@ -1067,22 +1089,33 @@ button {
     margin-right: 30px;
 }
 
+.features-grey-footer-left-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .features-grey-footer-left-body > p {
     font-size: 15px;
     font-weight: 300;
     line-height: 24px;
+    font-style: italic;
 }
 
 .features-grey-footer-left-body > p > strong {
     font-weight: 700;
     font-size: 12px;
     line-height: 18px;
+    font-style: normal;
+
 }
 
 .features-grey-footer-right-tile {
     display: flex;
     flex-direction: column;
     flex: 1;
+    gap: 10px;
+
 }
 
 .features-grey-footer-right-tile-icon {
@@ -1130,7 +1163,7 @@ button {
 .footer-blue-left-text {
     flex: 18;
     display: flex;
-    gap: 110px;
+    gap: 50px;
 }
 
 .footer-blue-left-text-body {
@@ -1307,7 +1340,6 @@ button {
     flex: 10;
     border-right: 1px solid #D7E3F3;
     display: flex;
-    padding-right: 150px;
 
 }
 
@@ -1323,7 +1355,7 @@ button {
 }
 .impact-footer-left-body {
     margin-left: 40px;
-    padding-right: 100px;
+    padding-right: 50px;
 
 }
 
@@ -1339,7 +1371,7 @@ button {
 
 .impact-footer-right {
     flex: 9;
-    padding-left: 40px;
+    padding-left: 50px;
     display: flex;
     gap: 50px;
 }
@@ -1348,7 +1380,7 @@ button {
     display: flex;
     flex-direction: column;
     flex: 1;
-    justify-content: space-between;
+
     align-items: center;
 
     p {
@@ -1495,6 +1527,7 @@ button {
     flex: 1;
     display: flex;
     justify-content: flex-start;
+    height: 35px;
 }
 
 .booking-button {
@@ -1519,7 +1552,9 @@ button {
     justify-content: center;
     gap: 10px;
     text-decoration: none;
-    min-height: 48px;
+    height: 55px;
+
+
 }
 
 .request-button, .message-button > span {
@@ -1555,6 +1590,8 @@ button {
     padding: 40px;
     display: flex;
     border-radius: 15px;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .contact-footer-1-left {
@@ -1579,7 +1616,7 @@ button {
 }
 
 .contact-footer-2-left {
-    flex: 3;
+    flex: 5;
     margin-right: 60px;
     border-right: 1px solid #D7E3F3;
     display: flex;
@@ -1598,14 +1635,14 @@ button {
 }
 
 .contact-footer-2-right {
-    flex: 7;
+    flex: 15;
     display: flex;
     padding: 0 40px;
     align-items: center;
+    gap: 40px;
 }
 
 .contact-card {
-    flex: 1;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -1651,6 +1688,7 @@ button {
     padding: 15px;
     background-color: #fff;
     border: 1px solid #D7E3F3;
+    align-self: center;
     border-radius: 15px;
 }
 
@@ -1682,15 +1720,16 @@ button {
     flex-direction: column;
     flex: 1;
     align-items: center;
-    justify-content: center;
     gap: 10px;
     padding: 0 20px;
+    justify-content: flex-start;
 
     h3 {
         font-size: 16px;
         line-height: 18px;
         font-weight: 700;
         text-align: center;
+
     }
 
     p {
@@ -1698,6 +1737,7 @@ button {
         line-height: 18px;
         font-weight: 400;
         text-align: center;
+
     }
 }
 
@@ -1870,8 +1910,8 @@ button {
     }
 
     .overview-p-box > p{
-        font-size: 20px;
-        line-height: 28px;
+        font-size: 22px;
+        line-height: 28px !important;
     }
 
     .case-main-body {
