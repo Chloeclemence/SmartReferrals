@@ -1789,7 +1789,9 @@ button {
         height: 140px;
         z-index: 9999;
         background-color: #fff;
+        border-bottom: 0.5px solid #D7E3F3;
     }
+
 
     .mobile-footer {
         display: block;
@@ -1804,6 +1806,7 @@ button {
         background: #fff;
         z-index: 9998;
         width: 100vw;
+
     }
 
     .mobile-footer .page-counter {
@@ -1835,7 +1838,7 @@ button {
     main,
     .content,
     .page-container {
-        padding-top: 140px;
+        padding-top: 40px;
         padding-bottom: 90px;
         min-height: 100vh;
         box-sizing: border-box;
@@ -1890,10 +1893,11 @@ button {
 
     .overview-box {
         margin-top: 0;
-        padding-top: 0 !important;
+        /*padding-top: 0 !important;*/
         flex-direction: column;
         margin-bottom: 0;
         gap: 40px;
+        padding: 0 24px 24px 24px;
     }
 
     .overview-box > .right-box {
@@ -1905,10 +1909,25 @@ button {
         margin-bottom: 0;
     }
 
+    .overview-box > .left-box > .heading-box {
+
+        width: 100%
+    }
+
+    .overview-box > .left-box > .overview-p-box {
+        width: 100%;
+
+    }
+
+    .overview-box {
+        margin-bottom: 40px;
+        padding-bottom: 0 !important;
+    }
     .quote-box {
         display: flex;
         flex-direction: column;
         gap: 30px;
+        margin: -24px 24px 24px 24px;
     }
 
     .quote-box::after {
@@ -1944,7 +1963,12 @@ button {
     .case-main-body {
         display: flex;
         flex-direction: column;
+        margin: 40px 24px 24px 24px;
         gap: 40px;
+    }
+
+    .case-left {
+        padding: 0;
     }
 
     .case-study-footer {
@@ -1952,7 +1976,6 @@ button {
         flex-direction: column;
         gap: 40px;
         padding: 0 !important;
-        border: 1px solid red
     }
 
     .footer-divider {
@@ -1965,8 +1988,11 @@ button {
         flex-direction: column;
         align-items: flex-start;
         gap: 40px;
+        padding: 40px;
 
     }
+
+
 
     .case-study-footer-left-image {
         display: flex;
@@ -1985,6 +2011,8 @@ button {
         flex-direction: column;
         align-items: flex-start;
         gap: 30px;
+        padding: 40px;
+        margin-right: 0;
     }
 
     .quote-icon {
@@ -1996,6 +2024,8 @@ button {
     .main-features-container {
         display: flex;
         flex-direction: column;
+        padding: 40px 24px 24px 24px;
+        gap: 40px;
     }
 
     .case-blue-heading, .case-orange-heading {
@@ -2006,10 +2036,12 @@ button {
     .case-main-copy {
         font-size: 14px !important;
         line-height: 22px !important;
+        margin-bottom: 40px !important;
     }
 
     .features-right {
         grid-template-columns: repeat(1, 1fr);
+        gap: 14px;
     }
 
     .case-study-footer-left-image > svg {
@@ -2021,6 +2053,8 @@ button {
         display: flex;
         flex-direction: column;
         gap: 40px;
+        margin: 24px;
+        padding: 40px;
     }
 
     .features-grey-footer-left {
@@ -2044,7 +2078,8 @@ button {
     }
 
     .features-blue-footer {
-        padding: 30px;
+        padding: 40px;
+        margin: 40px 24px 24px 24px;
     }
 
     .footer-blue-left {
@@ -2132,6 +2167,7 @@ button {
     .impact-main-section {
         display: flex;
         flex-direction: column;
+        padding: 40px 24px 0 24px;
 
     }
 
@@ -2145,10 +2181,11 @@ button {
     }
 
     .impact-footer {
-        margin-top: 0;
+        margin: 40px 24px 24px 24px;
         display: flex;
         flex-direction: column;
         gap: 50px;
+        padding: 24px;
     }
 
     .impact-footer-left {
@@ -2170,11 +2207,14 @@ button {
     .impact-footer-right {
         display: flex;
         flex-direction: column;
+        padding: 0;
     }
 
     .contact-main {
         display: flex;
         flex-direction: column;
+        gap: 24px;
+        padding: 40px 24px 0 24px;
     }
 
     .contact-main-left-footer,
@@ -2206,6 +2246,7 @@ button {
     .contact-footer-1, .contact-footer-2 {
         display: flex;
         flex-direction: column;
+        margin: 40px 24px 0 24px;
     }
 
     .contact-footer-1-left, .contact-footer-2-left {
@@ -2220,6 +2261,7 @@ button {
         align-items: flex-start;
         padding-right: 0;
         margin-right: 0;
+        border-bottom: 1px solid #D7E3F3;
     }
 
     .contact-footer-1-left-content {
@@ -2276,6 +2318,8 @@ button {
     .overview-box > .right-box > .waiting-time,
     .overview-box > .right-box > .savings {
         align-items: flex-start;
+        padding: 20px;
+        margin-bottom: 0;
     }
 
     .icon-column {
@@ -2285,6 +2329,19 @@ button {
         margin-right: 20px;
         flex-shrink: 0;
     }
+
+    .arrow-button > svg {
+        path {
+            stroke: #D7E3F3 !important;
+        }
+    }
+
+    .arrow-button:hover > svg {
+        path {
+            stroke: #D7E3F3 !important;
+        }
+    }
+
 
     .image {
         width: auto;
@@ -2304,7 +2361,7 @@ button {
     }
 
     .card-divider {
-        margin: 10px 0;
+        margin: 4px 0;
     }
 
     .feature-top {
