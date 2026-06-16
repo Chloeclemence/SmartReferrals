@@ -95,6 +95,7 @@ if (nextButton) {
 
 }
 
+
 if (previousButton) {
 
     previousButton.addEventListener('click', () => {
@@ -155,11 +156,21 @@ function updateArrowStates() {
 }
 
 if (mobileMenuToggle) {
-
     mobileMenuToggle.addEventListener('click', () => {
         mobileMenu.classList.toggle('open');
     });
-
 }
 
+document.getElementById('close-menu').onclick = () => {
+    console.log('close clicked');
+    mobileMenu.classList.remove('open');
+};
+
+// const closeMenuButton = document.getElementById('close-menu');
+
+// if (closeMenuButton) {
+//     closeMenuButton.addEventListener('click', () => {
+//         mobileMenu.classList.remove('open');
+//     });
+// }
 showSection(0);
