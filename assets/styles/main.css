@@ -424,6 +424,7 @@ button {
 .overview-box > .left-box > .overview-p-box {
     font-size: 22px;
     width: calc(100% - 70px);
+    line-height: 28px;
 }
 
 .quote-box {
