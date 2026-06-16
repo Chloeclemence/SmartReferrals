@@ -1976,11 +1976,12 @@ button {
         flex-direction: column;
         gap: 40px;
         padding: 0 !important;
+        margin: 40px 24px 0 24px;
     }
 
     .footer-divider {
         height: 1px;
-        width: 100%
+        width: calc(100% - 80px);
     }
 
     .case-study-footer-left {
@@ -2127,8 +2128,18 @@ button {
 
     .contact-footer-1-right {
         gap: 40px;
+        padding: 0;
     }
 
+    .contact-footer-1-left-content {
+        padding: 0;
+        margin: 0;
+    }
+
+    .contact-footer-2-left {
+        padding-right: 0 !important;
+        margin-right: 0;
+    }
     .footer-blue-left-text > .logos {
         display: grid;
 
