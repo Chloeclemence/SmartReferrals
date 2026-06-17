@@ -1145,6 +1145,7 @@ button {
     display: flex;
     padding: 40px;
     margin: 0 40px;
+    gap: 0;
 }
 .footer-blue-left {
     display: flex;
@@ -1165,7 +1166,7 @@ button {
 .footer-blue-left-text {
     flex: 18;
     display: flex;
-    gap: 50px;
+    gap: 0;
 }
 
 .footer-blue-left-text-body {
@@ -1192,8 +1193,7 @@ button {
     display: flex;
     gap: 60px;
     flex: 1;
-    padding-right: 75px;
-
+    padding-left: 75px;
 }
 
 .nhs, .gp-practices, .pcn {
@@ -1686,7 +1686,7 @@ button {
     border-radius: 15px;
 }
 .contact-orange-title {
-    color: #F37425;
+    color: #F37425 !important;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 16px;
@@ -1722,7 +1722,7 @@ button {
 .contact-footer-1-left-content {
     display: flex;
     align-items: center;
-    margin-right: 70px;
+    margin-right: 40px;
 }
 
 .contact-footer-1-left-content > p {
@@ -1739,7 +1739,7 @@ button {
 
 .contact-footer-1-right {
     display: flex;
-    padding: 0 40px;
+    padding: 0 0 0 40px;
 }
 
 .contact-footer-1-card {
@@ -1748,7 +1748,7 @@ button {
     flex: 1;
     align-items: center;
     gap: 10px;
-    padding: 0 20px;
+    padding: 0 5px;
     justify-content: flex-start;
 
     h3 {
@@ -1786,7 +1786,7 @@ button {
         left: 0;
         right: 0;
 
-        height: 140px;
+        height: 100px;
         z-index: 9999;
         background-color: #fff;
         border-bottom: 0.5px solid #D7E3F3;
@@ -1838,7 +1838,7 @@ button {
     main,
     .content,
     .page-container {
-        padding-top: 40px;
+        /*padding-top: 40px;*/
         padding-bottom: 90px;
         min-height: 100vh;
         box-sizing: border-box;
@@ -1846,8 +1846,9 @@ button {
 
     .mobile-header-main {
         display: flex;
-        padding: 80px 40px 40px 40px;
+        padding: 40px 24px 24px 24px;
         width: 100vw;
+        height: 100px;
     }
 
     .mobile-header-main-left {
@@ -1868,10 +1869,11 @@ button {
         border: none;
         cursor: pointer;
 
-        font-family: inherit;
-        font-size: 32px;
+        font-size: 24px;
         font-weight: 500;
         line-height: 1;
+        margin-left: 0;
+        padding-left: 0;
 
         color: #013F5C;
 
@@ -1989,7 +1991,7 @@ button {
         flex-direction: column;
         align-items: flex-start;
         gap: 40px;
-        padding: 40px;
+        padding: 40px 40px 0 40px;
 
     }
 
@@ -2012,7 +2014,7 @@ button {
         flex-direction: column;
         align-items: flex-start;
         gap: 30px;
-        padding: 40px;
+        padding: 0 40px 40px 40px;
         margin-right: 0;
     }
 
@@ -2041,8 +2043,16 @@ button {
     }
 
     .features-right {
-        grid-template-columns: repeat(1, 1fr);
+        display: grid;
+        grid-template-columns: 1fr;
         gap: 14px;
+    }
+
+    .feature-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        min-height: 137px;
     }
 
     .case-study-footer-left-image > svg {
@@ -2101,6 +2111,16 @@ button {
         margin-right: 0;
     }
 
+    .clipboard-icon {
+        display: flex;
+        align-self: flex-start;
+
+    }
+
+    .contact-footer-1-card {
+        padding: 0;
+    }
+
     .clipboard-icon > svg{
         height: 50px;
         width: 50px;
@@ -2148,6 +2168,7 @@ button {
         gap: 30px 20px;
 
         padding-right: 0;
+        padding-left: 0;
 
         width: 100%;
         margin-top: 20px;
@@ -2306,7 +2327,7 @@ button {
 
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 30px;
         align-items: flex-start;
     }
 
@@ -2322,6 +2343,10 @@ button {
     .title {
         font-size: 12px !important;
         line-height: 20px !important;
+    }
+
+    .contact-footer-1 {
+        padding: 40px 30px;
     }
 
 
@@ -2402,13 +2427,15 @@ button {
 
 
     .mobile-menu-header {
-        height: 140px;
+        display: flex;
+
+        padding: 40px 24px 24px 24px;
+
+        width: 100vw;
+        height: 100px;
 
         background: #fff;
 
-        padding: 0 40px;
-
-        display: flex;
         align-items: center;
         justify-content: space-between;
 
@@ -2440,7 +2467,7 @@ button {
     }
 
     .mobile-menu-nav {
-        padding: 24px;
+        padding: 0 24px;
     }
 
     .mobile-nav-link {
@@ -2449,7 +2476,7 @@ button {
         display: flex;
         align-items: center;
 
-        padding: 25px 0;
+        padding: 20px 0;
 
         border-bottom: 1px solid rgba(255,255,255,0.45);
 
@@ -2458,16 +2485,18 @@ button {
 
     .mobile-nav-number {
         width: 64px;
-
-        font-size: 32px;
+        margin-left: -15px;
+        font-size: 20px;
+        line-height: 26px;
         font-weight: 300;
 
         color: #fff;
+        padding-left: 0;
     }
 
     .mobile-nav-text {
-        font-size: 28px;
-        line-height: 36px;
+        font-size: 24px;
+        line-height: 32px;
         font-weight: 700;
         letter-spacing: 2.8px;
     }
@@ -2477,13 +2506,13 @@ button {
     }
 
     .mobile-menu-contact {
-        margin-top: auto;
+        margin-top: 0;
 
-        padding: 40px;
+        padding: 40px 24px;
 
         display: flex;
         flex-direction: column;
-        gap: 24px;
+        gap: 10px;
     }
 
     .mobile-contact-item {
@@ -2494,12 +2523,12 @@ button {
         color: #fff;
         text-decoration: none;
 
-        font-size: 18px;
+        font-size: 12px;
     }
 
     .mobile-contact-icon {
-        width: 64px;
-        height: 64px;
+        width: 40px;
+        height: 40px;
 
         background: rgba(255,255,255,0.85);
         border-radius: 15px;
